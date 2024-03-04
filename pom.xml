@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.2</version>
+		<version>3.1.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>microservice-project</groupId>
@@ -22,14 +22,14 @@
 	<packaging>pom</packaging>
 	<properties>
 		<java.version>17</java.version>
-		<spring-boot.version>3.2.2</spring-boot.version>
-		<maven-complier-plugin.version>3.12.1</maven-complier-plugin.version>
+		<spring-boot.version>3.1.2</spring-boot.version>
+		<maven-complier-plugin.version>3.11.0</maven-complier-plugin.version>
 		<twitter4j.version>4.0.7</twitter4j.version>
-		<lombok.version>1.18.30</lombok.version>
-		<avro.version>1.11.1</avro.version>
-		<spring-kafka.version>3.1.1</spring-kafka.version>
-		<spring-retry.version>2.0.5</spring-retry.version>
-		<kafka-avro-serializer.version>7.6.0</kafka-avro-serializer.version>
+		<lombok.version>1.18.28</lombok.version>
+		<avro.version>1.11.2</avro.version>
+		<spring-kafka.version>3.0.9</spring-kafka.version>
+		<spring-retry.version>2.0.2</spring-retry.version>
+		<kafka-avro-serializer.version>7.4.0</kafka-avro-serializer.version>
 	</properties>
 
 	<repositories>
@@ -131,6 +131,18 @@
 						<artifactId>swagger-core</artifactId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>org.example</groupId>
+				<artifactId>kafka-admin</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.example</groupId>
+				<artifactId>kafka-producer</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

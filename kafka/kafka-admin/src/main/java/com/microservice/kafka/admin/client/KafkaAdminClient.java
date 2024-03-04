@@ -1,8 +1,8 @@
-package com.microservices.kafka.admin.client;
+package com.microservice.kafka.admin.client;
 
 import com.microservice.config.KafkaConfigData;
 import com.microservice.config.RetryConfigData;
-import com.microservices.kafka.admin.exception.KafkaClientException;
+import com.microservice.kafka.admin.exception.KafkaClientException;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.CreateTopicsResult;
 import org.apache.kafka.clients.admin.NewTopic;

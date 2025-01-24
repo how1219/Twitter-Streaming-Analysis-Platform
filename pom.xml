@@ -18,6 +18,7 @@
         <module>app-config-data</module>
 		<module>kafka</module>
 		<module>common-config</module>
+		<module>config-server-repository</module>
 	</modules>
 	<packaging>pom</packaging>
 	<properties>

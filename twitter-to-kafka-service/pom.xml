@@ -48,7 +48,13 @@
             <groupId>org.example</groupId>
             <artifactId>kafka-producer</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
